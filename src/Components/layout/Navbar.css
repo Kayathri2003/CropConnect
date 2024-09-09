@@ -1,0 +1,41 @@
+/* Navbar profile icon styles */
+
+  .N_title{
+    margin-right: 800px;
+    margin-bottom: 18px;
+    font-size: 28px;
+  }
+  .L_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    height: 60px;
+    padding: 0 20px;
+    width: 100%;
+    color: white;
+    }
+    
+    /* .L_logo{
+    margin-right: 100px;
+    } */
+    .L_logo .logo{
+    width:100px;
+    height:50px;
+    float: left;
+    }
+    .L_logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: antiquewhite;
+    }
+
+    .L_profile .profile-img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: antiquewhite;
+      /* margin-right: 5000000px; */
+      }

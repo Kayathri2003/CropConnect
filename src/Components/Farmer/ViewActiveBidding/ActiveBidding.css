@@ -1,0 +1,183 @@
+/* ActiveBidding.css */
+
+/* body {
+  background-color: rgb(154, 200, 241);
+  margin: 0;
+  font-family: Arial, sans-serif;
+} */
+
+
+.AB_navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #262626;
+	height: 60px;
+	padding: 0 20px;
+	width: 100%;
+	color: white;
+  }
+  
+  /* .AB_logo{
+	margin-right: 100px;
+  } */
+  .AB_logo .logo{
+	width:100px;
+	height:50px;
+	float: left;
+  }
+  .AB_logo p {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	color: antiquewhite;
+  }
+  
+  .AB_title{
+    /* margin-right:500px; */
+    margin-right: 800px;
+    margin-bottom: 18px;
+    font-size: 28px;
+  }
+  .AB_profile .profile-img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	background-color: antiquewhite;
+  }
+  #AB_h3{
+	  color: black;
+    text-align: center;
+    height: fit-content;
+  }
+.AB_box{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+  
+}
+.AB_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between cards */
+  /* padding: 20px; */
+  background-image: url('src/assets/ABid.jpeg'); ;
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  height:600px;
+
+}
+
+.AB_card {
+  background-color: #fff; /* Card background color */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: 300px; /* Fixed width for cards */
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.AB_card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.AB_image-container img {
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+/* .AB_details-container {
+  margin-top: 10px;
+}
+
+.AB_details-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.AB_details-container li {
+  margin: 5px 0;
+  text-align: center;
+
+} */
+/* ActiveBidding.css */
+
+/* Ensure the overall container is properly styled */
+.AB_details-container {
+  margin-top: 15px; /* Margin for spacing above */
+}
+
+/* Style the unordered list */
+.AB_details-container ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Space between list items */
+}
+
+/* Style each list item */
+.AB_details-container li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically align items */
+  font-size: 16px; /* Adjust font size */
+}
+
+/* Style the label parts */
+.AB_details-container li b {
+  margin-right: 10px; /* Space between label and value */
+  font-weight: bold; /* Bold for labels */
+  color: #333; /* Darker color for labels */
+}
+
+/* Style the value parts */
+.AB_details-container li span {
+  color: #555; /* Slightly lighter color for values */
+}
+
+/* ActiveBidding.css */
+
+.AB_price-button-container {
+  margin-top: 10px; /* Space above the button container */
+  text-align: center; /* Center the button within the container */
+}
+
+.AB_price-button-container button {
+  background-color: #eab317; /* Primary button color (blue) */
+  color: #ffffff; /* Button text color (white) */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.AB_price-button-container button:hover {
+  background-color: #d4c088;; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.AB_price-button-container button:active {
+  background-color: #020202; /* Even darker blue when button is pressed */
+  transform: translateY(0); /* Remove lift effect on press */
+}
+
+hr {
+  margin: 20px 0;
+}

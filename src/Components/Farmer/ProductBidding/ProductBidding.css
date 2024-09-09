@@ -1,0 +1,64 @@
+/* ProductBidding.css */
+
+.background {
+    background-color: #f8f9fa;
+}
+
+.container {
+    padding: 20px;
+}
+
+.product-details {
+    margin-bottom: 20px;
+}
+.PB_{
+    background-color: rgba(0, 0, 0, 0.125);
+}
+.product-item {
+    margin-bottom: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.bid_text {
+    margin-top: 20px;
+}
+
+.bid-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bid-item.accepted {
+    background-color: #d4edda; /* Light green background for accepted bids */
+    border-color: #c3e6cb; /* Green border for accepted bids */
+}
+
+.bid-item.denied {
+    background-color: #f8d7da; /* Light red background for denied bids */
+    border-color: #f5c6cb; /* Red border for denied bids */
+}
+
+.bid-item_p {
+    margin: 5px 0;
+}
+
+.bid-button {
+    margin-right: 10px;
+}
+
+.accept-button {
+    background-color: #28a745; /* Green button */
+    color: white;
+}
+
+.deny-button {
+    background-color: #dc3545; /* Red button */
+    color: white;
+}

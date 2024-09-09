@@ -1,0 +1,200 @@
+/* Transition for hover effects */
+.FL_image-container,
+.FL_addfunction,
+.FL_viewbid,
+.FL_buybid {
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover effect for FL_image-container */
+.FL_image-container:hover {
+    background-color: rgb(187, 168, 133);
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+}
+
+/* Hover effect for FL_addfunction, FL_viewbid, FL_buybid */
+.FL_addfunction:hover,
+.FL_viewbid:hover,
+.FL_buybid:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
+}
+
+/* Keyframes for a subtle bounce effect */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Apply bounce animation to buttons */
+.FL_button-buy {
+    animation: bounce 2s infinite; /* Continuous bounce effect */
+}
+
+/* Background and container styling */
+.FL_background {
+    position: relative; /* Position relative for overlay */
+    background-image: url('src/assets/farmer_landing2.jpeg');
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;  
+    box-sizing: border-box; 
+}
+
+.FL_background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: 1; /* Overlay above background */
+}
+
+.FL_background > * {
+    position: relative; /* Ensure children are above the overlay */
+    z-index: 2; /* Bring children above the overlay */
+}
+
+/* Styling for image rows and containers */
+.FL_image-row {
+    display: flex;
+    gap: 40px;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.FL_image-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin-top: 100px;
+    max-width: 500px;
+    height: 400px;
+    background-color: #c29054;
+    position: relative;
+    box-shadow: 3px 4px 8px black;
+    padding: 20px;
+    width: 450px;
+    border-radius: 40px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.FL_image-container:hover {
+    background-color: rgb(187, 168, 133);
+    transform: scale(1.05);
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for circular function buttons */
+.FL_addfunction {
+    background-image: url('src/assets/fl_add.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border: 5px solid #6e250e; /* Border color and thickness */
+    box-shadow: 0 0 15px rgb(212, 112, 17); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.FL_viewbid,
+.FL_buybid {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border: 5px solid #6e250e; /* Border color and thickness */
+    box-shadow: 0 0 15px rgb(212, 112, 17); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.FL_viewbid {
+    background-image: url('src/assets/fl_vb.jpg');
+}
+
+.FL_buybid {
+    background-image: url('src/assets/fl_buy.jpg');
+}
+
+.FL_addfunction:hover,
+.FL_viewbid:hover,
+.FL_buybid:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
+}
+
+/* Text styling */
+.FL_h3 {
+    color: #eab317;
+    font-style: italic;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.FL_down_text,
+.FL_down_text1 {
+    margin-top: 20px; 
+    color: black; 
+    font-style: bold;
+    font-size: 20px; 
+    line-height: 1.6; /* Adjust line height for readability */
+    text-align: justify;
+    text-align-last: center; 
+    padding: 0 10px; /* Add padding for better spacing */
+}
+
+/* Button styling */
+.FL_button-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.FL_button-buy {
+    background: linear-gradient(145deg, #d3701d, #e6b670); /* Gradient background */
+    color: white; 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    font-size: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    animation: bounce 2s infinite; /* Continuous bounce effect */
+}
+
+.FL_button-buy:hover {
+    background: linear-gradient(145deg, #e6b670, #d3701d); /* Reversed gradient on hover */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}

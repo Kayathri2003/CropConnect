@@ -1,0 +1,129 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+
+.AP_container {
+    background-color: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .AP_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 55px;
+    padding: 0 20px;
+  
+    color: white;
+  }
+  
+  .AP_logo{
+    margin-right: 100px;
+  }
+  .AP_logo .logo{
+    width:100px;
+    height:50px;
+    float: left;
+  }
+  .AP_logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: antiquewhite;
+  }
+  
+  
+  .AP_profile .profile-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: antiquewhite;
+  }
+  
+  .AP_h3 {
+    color: #9d6a32;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  
+  .AP_form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    /* margin-bottom:900px; */
+    height: 450px;
+    padding: 20px;
+    background-color: rgb(122, 220, 180) ;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgb(0, 208, 130);
+  }
+  
+  .AP_AddProducts-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .AP_form-group {
+    display: flex;
+    justify-content: space-between; /* Adjusted for better alignment */
+    margin-bottom: 15px;
+    width: 100%; /* Adjusted to fit the container */
+  }
+  
+  .AP_form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    width: 130px; /* Consistent with previous styling */
+  }
+  
+  .AP_form-group input[type="text"],
+  .AP_form-group input[type="number"],
+  .AP_form-group input[type="file"],
+  .AP_form-group select {
+    width: 80%; 
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px #82b440;
+    box-sizing: border-box;
+    background-color: rgb(152, 236, 190);
+  }
+  
+  .AP_form-group input[type="text"]:focus,
+  .AP_form-group input[type="number"]:focus,
+  .AP_form-group select:focus {
+    border-color: #5daf4c;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(59, 192, 88, 0.25);
+  }
+  
+  .AP_submit-button {
+    background-color: #545454;
+    color: #fff;
+    box-shadow: #90c050;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AP_submit-button:hover {
+    background-color:rgb(40, 179, 123) ;
+  }
+  
+  .AP_submit-button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+  }
+  
