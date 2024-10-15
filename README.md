@@ -1,5 +1,11 @@
 # CropConnect
 
+
+Developed a bidding platform to connect farmers directly with customers, eliminating intermediaries to maximize farmers' profits.
+Farmers post products, customers place bids, and farmers select the highest bid, ensuring optimal payment and transparent
+transactions.
+
+
 # Problem
 Farmers face problems in selling their product for a fair price, because of middlement.
 
