@@ -17,8 +17,10 @@ A web-app that connects farmers directly with buyers through a bidding process, 
 # Tech Stack
 Front-end  
 React, Bootstrap
+
 Back-end 
 Java, Spring Boot
+
 Database 
 MS-SQL server 
 
